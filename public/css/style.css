@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'Muli';
+	src: url(fonts/Muli/Muli-Regular.ttf) format("truetype");
+	font-weight: normal;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'Muli';
+	src: url(fonts/Muli/Muli-Bold.ttf) format("truetype");
+	font-weight: bold;
+	font-style:normal;
+}
+@font-face {
+	font-family: 'Muli';
+	src: url(fonts/Muli/Muli-Italic.ttf) format("truetype");
+	font-weight: normal;
+	font-style:italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: #555;
+}
+
+h1, h2, h3 {
+  font-family: 'Original Surfer', cursive;
+  color: #CC0000;
+  line-height: 1.3em;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.7em;
+  color: #00CC00;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #00CC00;
+}
+
+header {
+  text-align: center;
+}
+
+header .top {
+  background-color: #C00;
+  color: #FFF;
+  padding: 10px;
+  margin: 0;
+}
+
+header .top a {
+  color: #FFF;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(204, 0, 0, 1);
+  border-color: rgba(204, 0, 0, 0.5);
+}
+
+#mainmenu {
+  text-align: left;
+  border: 1px solid #C00;
+}
+
+#mainmenu a {
+  color: #C00;
+  padding: 10px;
+}
+
+#mainmenu a:hover {
+  background-color: rgba(204, 0, 0, 0.2);
+}
+
+#mainmenu .active a {
+  background-color: rgba(204, 0, 0, 0.8);
+  color: white;
+}
+
+main {
+  min-height: 300px;
+}
+
+input, button {
+  padding: 10px 1%;
+}
+
+#formAdress {
+  display: flex;
+  justify-content: space-between;
+}
+
+#formAdress input {
+  flex-basis: 75%;
+}
+
+#formAdress button {
+  flex-basis: 25%;
+  border: 0;
+  background-color: #C00;
+  color: #FFF;
+}
+
+article {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+article p {
+  margin: 1em 0;
+}
+
+.article-body {
+  flex: 1 1 auto;
+}
+
+a.readmore {
+  background-color: #C00;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Styles de la page login */
+#loginForm {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#loginForm button {
+  background-color: #C00;
+  color: #FFF;
+  border: 0;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  background-color: #C00;
+  color: #FFF;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a, footer a:hover {
+  color: inherit;
+}

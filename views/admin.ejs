@@ -1,0 +1,49 @@
+<%- include('header') -%>
+<a href="/liste">Liste des plats</a>
+<h1>Ajout du plat</h1>
+
+<form action="/admin" method="post">
+      <div class="form-group col-md-3 m-auto ">
+        <label for="nom">Nom du plat</label>
+        <input type="text" name="nom" class="form-control" id="nomDuPlat" placeholder="">
+      </div>
+      <div class="form-group col-md-3 m-auto">
+        <label for="description">Description</label>
+        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3">
+        </textarea>           
+    </div>
+    <div class="form-group col-md-3 m-auto">
+      <label for="prix">Prix</label>
+      <input type="number" name="prix" class="form-control" id="prixPlat" placeholder="">
+    </div>
+    <div class="form-group col-md-3 m-auto">
+      <label for="image">Image</label>
+      <input type="text" name="image" class="form-control" id="imagePlat" placeholder="">
+    </div>
+      <div class="form-group col-md-3 m-auto">
+        <label for="categorie">Catégorie</label>
+        <select id="categoriePlat" name="categorie" class="form-control">
+          <option value="pizza" selected>pizza</option>
+          <option value="pâtes">pâtes</option>
+          <option value="salades">salades</option>
+          <option value="dessrts">desserts</option>
+          <option value="boissons">boissons</option>
+          <option value="vins">vins</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group"></div>
+      <div class="form-check  ">
+        <input class="form-check-input" name ="disponibilite" type="checkbox" id="gridCheck">
+        <label class="form-check-label"  for="gridCheck">
+        Publier
+          <input class="form-check-input" name="miseEnAvant" type="checkbox" id="gridCheck">
+          <label class="form-check-label"  for="gridCheck">
+        En vedette
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary ">Ajouter</button>
+  </form>
+
+  <%- include('footer') -%>

@@ -1,0 +1,72 @@
+<%- include('header') -%>
+  <main class="container">
+    <h1>Vos pâtes et pizzas préférés <span>livrés chez vous en un clic</span></h1>
+    <form id="formAdress" action="index.html" method="post">
+      <input type="text" name="address" placeholder="Saississez votre adresse">
+      <button type="submit">Rechercher</button>
+    </form>
+    <h2>Découvrez nos produits !</h2>
+    <div class="row">
+      <article class="col-md-6 col-lg-4">
+        <div class="article-body">
+          <h3>Nos pizzas</h3>
+          <img class="img-fluid" src="img/pizza.jpg" alt="Nos pizzas">
+          <p>Toutes nos pizzas sont faites maison avec des ingrédients frais et issus des circuits courts.</p>
+        </div>
+        <div class="article-footer">
+          <a class="readmore btn-block" href="/carte/pizza">Voir la carte <i class="fas fa-plus-circle"></i></a>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-4">
+        <div class="article-body">
+          <h3>Nos pâtes</h3>
+          <img class="img-fluid" src="img/pates.jpg" alt="Nos pâtes">
+          <p>Nos pâtes et ravioles sont frais et faits maison.</p>
+        </div>
+        <div class="article-footer">
+          <a class="readmore btn-block" href="/carte/pates">Voir la carte <i class="fas fa-plus-circle"></i></a>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-4">
+        <div class="article-body">
+          <h3>Nos salades</h3>
+          <img class="img-fluid" src="img/salade.jpg" alt="Nos salades">
+          <p>Nos salades sont délicieuses et vous permettent de manger léger et équilibré.</p>
+        </div>
+        <div class="article-footer">
+          <a class="readmore btn-block" href="/carte/salades">Voir la carte <i class="fas fa-plus-circle"></i></a>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-4">
+        <div class="article-body">
+          <h3>Nos desserts</h3>
+          <img class="img-fluid" src="img/dessert.jpg" alt="Nos desserts">
+          <p>Pour conclure en beauté, pas de festin italien sans dulce bien sucré&nbsp;!</p>
+        </div>
+        <div class="article-footer">
+          <a class="readmore btn-block" href="/carte/desserts">Voir la carte <i class="fas fa-plus-circle"></i></a>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-4">
+        <div class="article-body">
+          <h3>Nos boissons fraiches</h3>
+          <img class="img-fluid" src="img/boissons-fraiches.jpg" alt="Nos boissons fraiches">
+          <p>Un soda ou une eau fraiche pour accompagner votre repas.</p>
+        </div>
+        <div class="article-footer">
+          <a class="readmore btn-block" href="/carte/boissons">Voir la carte <i class="fas fa-plus-circle"></i></a>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-4">
+        <div class="article-body">
+          <h3>Nos vins</h3>
+          <img class="img-fluid" src="img/vins.jpg" alt="Nos vins italiens">
+          <p>Des vins italiens, blanc, rosé ou rouge, pour accompagner vos repas.</p>
+        </div>
+        <div class="article-footer">
+          <a class="readmore btn-block" href="/carte/vins">Voir la carte <i class="fas fa-plus-circle"></i></a>
+        </div>
+      </article>
+    </div>
+  </main>
+  <%- include('footer') -%>

@@ -1,0 +1,18 @@
+<%- include('header') -%>
+<main class="container">
+<div class="row">
+    <% for(let i=0;i<plats.length;i++){ %>
+    <article class="col-md-6 col-lg-4">
+      <div class="article-body">
+        <h3><%= plats[i].nom %></h3>
+        <img class="img-fluid" src="/img/<%= plats[i].image %>" alt="<%= plats[i].categorie %>">
+        <p><%= plats[i].description %></p>
+      </div>
+      <div class="article-footer">
+        <a class="readmore btn-block" href="#"><%= plats[i].prix %> €  - Ajouter au panier</a>
+      </div>
+    </article>
+    <% } %>
+</div>
+</main>
+<%- include('footer') -%>

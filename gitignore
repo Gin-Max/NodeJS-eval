@@ -1,0 +1,2 @@
+# 1. Ignore all maven "target" folder
+**/node_modules/

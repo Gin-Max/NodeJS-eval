@@ -1,0 +1,30 @@
+<%- include('header') -%>
+
+       <h1>Voici nos plats</h1>
+       <table class="table">
+                 
+         <tr>
+            <th>Nom</th>
+            <th>Description</th>
+            <th>Prix</th>
+            <th>Catégorie</th>
+            <th>Publié</th>
+            <th>En vedette</th>
+         </tr>
+               
+                  
+                  <% for(let i=0;i<plats.length;i++){ %>
+                     <tr>
+                     <td><%= plats[i].nom %></td>
+                     <td><%= plats[i].description.substring(0,30)%></td>
+                     <td><%= plats[i].prix %></td>
+                     <td><%= plats[i].categorie %></td>
+                     <td><%= plats[i].disponibilite %></td>
+                     <td><%= plats[i].miseEnAvant %></td>
+                  </tr>            
+                
+                     <% } %>
+
+      </table>
+      
+<%- include('footer') -%>

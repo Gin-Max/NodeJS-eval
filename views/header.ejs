@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TP restaurant</title>
+  <meta name="description" content="Notre restaurant vous propose ses pâtes, ses pizzas et ses desserts italiens.">
+  <meta name="author" content="Christiane Dumont">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Original+Surfer" rel="stylesheet">
+  <!-- CSS de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- CSS perso -->
+  <link rel="stylesheet" href="/css/style.css" media="all">
+</head>
+
+<body>
+  <header>
+    <p class="top">Appelez nous au <a href="tel:+33320304050">03 20 30 40 50</a> - <a href="/login"><i class="fas fa-sign-in-alt"></i> Se connecter</a></p>
+    <div class="container">
+      <!-- Navbar BEGIN -->
+      <nav class="navbar navbar-light">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/"><img src="/img/logo.jpg" alt="Restauration italienne click and collect"></a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-icon"><i class="fas fa-bars fa-1x"></i></span>
+        </button>
+        <!-- Collapsible content BEGIN -->
+        <div class="collapse navbar-collapse" id="mainmenu">
+          <!-- Links BEGIN -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/carte">Notre carte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nous contacter</a>
+            </li>
+          </ul>
+          <!-- Links END -->
+        </div>
+        <!-- Collapsible content END -->
+      </nav>
+      <!-- Navbar END -->
+    </div>
+  </header>

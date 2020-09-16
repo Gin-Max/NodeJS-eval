@@ -1,0 +1,21 @@
+<%- include('header') -%>
+    <main class="container">
+      <form id="loginForm" method="post">
+        <h2 class="text-center">Connectez-vous</h2>
+        <div class="form-group">
+          <input id="pseudo" class="form-control" name="pseudo" type="text" placeholder="Votre pseudo" value="" minlength="3" maxlength="12" required>
+        </div>
+				<div class="form-group">
+			    <input id="mdp" class="form-control" name="mdp" type="password" placeholder="Votre mot de passe" value="" minlength="8" maxlength="30" required>
+				</div>
+        <div class="form-group">
+          <label><input type="checkbox"> Enregistrer le mot de passe</label>
+          <button type="submit" class="btn btn-block">Se connecter <i class="fas fa-sign-in-alt"></i></button>
+        </div>
+        <div class="p-2 clearfix">
+          <a href="#" class="float-left">Mot de passe oublié</a>
+          <a href="#" class="float-right">Créer un compte</a>
+        </div>
+			</form>
+    </main>
+    <%- include('footer') -%>
