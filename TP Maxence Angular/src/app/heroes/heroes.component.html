@@ -1,0 +1,15 @@
+<h2>My heroes </h2>
+<ul>
+    <li
+        *ngFor="let element of heroes"
+        [heroesId]="element.id" 
+        [heroesName]="element.name">id :{{ element.id }} - name :{{ element.name }}</li>
+        
+</ul>
+<div *ngIf="Heroselection">
+<label>Name</label>
+<h2>{{ hero }} Details</h2>
+
+
+<input type="text" [(ngModel)]="Heroeselection.name" placeholder="name">
+
